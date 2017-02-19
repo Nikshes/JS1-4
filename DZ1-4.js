@@ -60,24 +60,45 @@ function chessboard() {
 	}
 }
 
-// Задача №3  (решение учебника)	
-function chessboard2() {
-var size = 8;
+// Задача №3 
+function chessboard3(x,y) {
+	var x;
+	var y;
+	var a="#"
+	var b=" "
+	for (a="#"; a.length<x;a=a+b){	
+	console.log(a)
+		for (b=" "; b.length<y;b=b+a){
+			console.log(b)
+		} 
 
-var board = "";
-
-for (a = 0; a < size; a++) {
-  for (b = 0; b < size; b++) {
-    if ((b + a) % 2 == 0)
-      board += "#";
-    else
-      board += " ";
-  }
-  board += "\n";
+	}
+	
+console.log (b)
 }
 
-console.log(board);
+
+function cb (){
+	var x;
+	var y;
+	for (x=0; x<=8; x++){
+	
+		console.log("#")
+	
+	console.log(x)
+	}
+	console.log(x)
 }
+
+
+
+
+
+
+
+
+
+
 
 // Задача №4
 function min (a,b){
